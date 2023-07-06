@@ -301,7 +301,9 @@ input {
   height: 100vh;
   object-fit: cover;
   object-position: 83%;
+  filter: brightness(0.5); /* Valor entre 0 e 1, quanto menor, mais escuro */
 }
+
 
 .home__container {
   position: relative;
@@ -327,8 +329,16 @@ input {
   font-size: 100px;
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-2-5);
+  text-align: right;
+}
+.home__data-titlecurso{
+  font-size: 100px;
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-2-5);
+  text-align: left;
 
 }
+
 
 .home__social {
   display: flex;
@@ -576,6 +586,13 @@ input {
   font-size: 1.2rem;
 }
 
+.video2 {
+  margin-top: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /*=============== PLACES ===============*/
 .place__card, .place__img {
   height: 230px;
@@ -731,9 +748,10 @@ input {
 .testimonial
 {
   background: var(--first-color-second);
-  padding: 30px;
+  padding: 5px;
   border-radius: 10px;
   height: 340px;
+  margin-bottom: 20px;
 
 }
 
@@ -1129,3 +1147,6 @@ input {
     height: 640px;
   }
 }
+
+
+/* COurses */
